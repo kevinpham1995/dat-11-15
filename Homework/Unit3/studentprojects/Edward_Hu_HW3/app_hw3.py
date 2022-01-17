@@ -45,7 +45,8 @@ if section == 'Data Explorer':
     
     
     x_axis = st.sidebar.selectbox("Choose column for X-axis", 
-                                  df.select_dtypes(include = np.object).columns.tolist())
+                                  df.drop('charges',axis = 1).columns.tolist())
+# df.select_dtypes(include = np.object).columns.tolist())
     
     y_axis = st.sidebar.selectbox("Choose column for y-axis", ['charges'])
     
