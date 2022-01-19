@@ -75,7 +75,7 @@ if section == 'Data Explorer':
 
     st.write(df)
     
-# if section == 'Decision Tree Model Explorer':
+# if section == 'Linear Regression Model Model Explorer':
 #     st.text("Choose Options to the Side to Explore the Model")
 #     model = load_model()
     
